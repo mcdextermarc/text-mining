@@ -111,4 +111,4 @@ def make_language_classifier():
     #   extraction.
     # - Use make_pipeline to assemble the vectorizer and the classifier object
     #   together.
-    return make_pipeline(TfidfVectorizer(analyzer ='char_wd',ngram_range=(1, 3), min_df=3, max_df=0.9), LogisticRegression(solver='lbfgs'),)
+    return make_pipeline(TfidfVectorizer(analyzer ='char',ngram_range=(1, 3), min_df=3, max_df=0.9), LogisticRegression(solver='lbfgs'),)
